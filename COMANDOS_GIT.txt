@@ -1,0 +1,102 @@
+===========================================
+COMANDOS GIT - PRONTO PARA COPIAR E COLAR
+===========================================
+
+PASSO 1: INICIALIZAR E FAZER PRIMEIRO COMMIT
+---------------------------------------------
+
+git init
+git add .
+git commit -m "Initial commit: Portfólio profissional Thaynara Silva - RH e Logística"
+git branch -M main
+
+
+PASSO 2: CONECTAR AO GITHUB
+----------------------------
+
+IMPORTANTE: Primeiro crie o repositório no GitHub em:
+https://github.com/new
+
+Depois, substitua SEU_USUARIO pelo seu username do GitHub e execute:
+
+git remote add origin https://github.com/SEU_USUARIO/portfolio-thaynara-silva.git
+
+
+PASSO 3: ENVIAR PARA O GITHUB
+------------------------------
+
+git push -u origin main
+
+
+===========================================
+COMANDOS PARA ATUALIZAÇÕES FUTURAS
+===========================================
+
+VERIFICAR ALTERAÇÕES:
+git status
+
+ADICIONAR FICHEIROS ALTERADOS:
+git add .
+
+FAZER COMMIT:
+git commit -m "Descrição da alteração"
+
+ENVIAR PARA GITHUB:
+git push
+
+
+===========================================
+COMANDOS ÚTEIS
+===========================================
+
+VER HISTÓRICO DE COMMITS:
+git log --oneline
+
+VER DIFERENÇAS:
+git diff
+
+DESFAZER ALTERAÇÕES (antes de commit):
+git checkout -- nome_do_ficheiro
+
+VER BRANCH ATUAL:
+git branch
+
+VER REPOSITÓRIO REMOTO:
+git remote -v
+
+
+===========================================
+TROUBLESHOOTING
+===========================================
+
+SE DER ERRO DE AUTENTICAÇÃO:
+1. Configure seu nome e email:
+   git config --global user.name "Seu Nome"
+   git config --global user.email "seu.email@example.com"
+
+2. Use Personal Access Token do GitHub:
+   https://github.com/settings/tokens
+
+SE PRECISAR REMOVER REPOSITÓRIO REMOTO:
+git remote remove origin
+
+DEPOIS ADICIONE NOVAMENTE:
+git remote add origin https://github.com/SEU_USUARIO/portfolio-thaynara-silva.git
+
+
+===========================================
+PRÓXIMO PASSO: DEPLOY NA VERCEL
+===========================================
+
+Após fazer push para o GitHub:
+
+1. Acesse: https://vercel.com
+2. Faça login com GitHub
+3. Clique em "Add New Project"
+4. Selecione o repositório
+5. Clique em "Deploy"
+
+Pronto! Seu site estará online em minutos.
+
+===========================================
+
